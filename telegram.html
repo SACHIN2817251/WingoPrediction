@@ -1,0 +1,195 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team 19 Channels</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      background-color: #000;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Background Particles */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
+    }
+
+    .particles span {
+      position: absolute;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); opacity: 0.8; }
+      50% { transform: translateY(-20px); opacity: 0.2; }
+    }
+
+    /* Generating Particles Dynamically */
+    .particles span:nth-child(odd) { animation-duration: 7s; }
+    .particles span:nth-child(even) { animation-duration: 5s; }
+
+    /* Container Styling */
+    .container {
+      background: linear-gradient(145deg, #111, #222);
+      padding: 40px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Logo Section */
+    .logo {
+      animation: pulse 4s infinite;
+    }
+
+    .logo img {
+      width: 120px;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* Title */
+    .title {
+      margin-top: 15px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #fff, #bbb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Description */
+    .description {
+      margin: 20px 0;
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    /* Buttons Section */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Button Style */
+    .btn {
+      padding: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      background: #fff;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Shimmer Effect on Button */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+      transform: skewX(-25deg);
+      transition: 0.5s;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Particles -->
+  <div class="particles">
+    <!-- Add 50 particles dynamically -->
+    <script>
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('span');
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.left = Math.random() * 100 + '%';
+        document.querySelector('.particles').appendChild(particle);
+      }
+    </script>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="App Logo">
+    </div>
+
+    <!-- Title -->
+    <div class="title">TEAM 19</div>
+
+    <!-- Description -->
+    <div class="description">
+      •WELCOME TO "TEAM 19" FAMILY
+      </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <a href="https://telegram.me/+anWRjjpfP3NjYjI9" download class="btn">MAIN CHANNEL</a>
+        <a href="https://telegram.me/+XmYJ9G_z_D5kZGQ1" download class="btn">PREDICTION CHANNEL</a>
+        
+
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEAM 19</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(145deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 350px;
+      width: 100%;
+      animation: popIn 0.8s ease-out;
+    }
+
+    /* APK Logo */
+    .apk-logo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #1e3c72;
+      margin-bottom: 20px;
+      animation: bounce 2s infinite;
+    }
+
+    /* APK Name */
+    .apk-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #1e3c72;
+    }
+
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 12px 0;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-download {
+      background: #4caf50;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+    }
+
+    .btn-download:hover {
+      background: #43a047;
+      box-shadow: 0 10px 20px rgba(76, 175, 80, 0.6);
+      transform: translateY(-3px);
+    }
+
+    .btn-telegram {
+      background: #0088cc;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+    }
+
+    .btn-telegram:hover {
+      background: #0077b5;
+      box-shadow: 0 10px 20px rgba(0, 136, 204, 0.6);
+      transform: translateY(-3px);
+    }
+
+    /* Animation */
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="APK Logo" class="apk-logo">
+    <h1 class="apk-name">TEAM 19 ALL LINKS</h1>
+    <a href="https://telegram.me/secret_prediction_bot" target="_blank" class="btn btn-telegram">SECRET PREDICTION BOT</a>
+    <a href="bestgame.html" target="_blank" class="btn btn-telegram">BEST GAME LINK</a>
+    <a href="telegram.html" target="_blank" class="btn btn-telegram">TELEGRAM CHANNELS</a>
+    <a href="https://t.me/team19helper_bot" target="_blank" class="btn btn-telegram">CUSTOMER SERVICE</a>
+  </div>
+</body>
+</html>
